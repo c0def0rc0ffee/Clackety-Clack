@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8" />
+    
+    <!-- Ensures compatibility with Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Responsive design for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title of the document -->
+    <title>Clackety Clack</title>
+    
+    <!-- Favicon links -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <!-- Custom CSS files -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    
+    <!-- SEO meta tags (example) -->
+    <meta name="description" content="Clackety Clack is a fun and interactive typing test game. Annoy your colleagues and test your switches with various difficulty levels.">
+    <meta name="keywords" content="typing test, Clackety Clack, keyboard game, typing game, typing practice">
+    <meta name="author" content="robford.org">
+    
+    <!-- Preconnect for performance optimization -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+  <body>
+    <div class="container main">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <div class="row text-center my-4">
+            <div class="col-12">
+              <span class="title-text">Clackety Clack<br></span>
+              <span class="title-sm-text">Annoy your colleagues and test your switches.</span>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-4">
+              <div class="buttons-container row">
+                <div class="settings">
+                  <span class="title-sm-text text-center">Level</span>
+                  <button class="btn start btn-index" id="Easy" value="1" onclick="buttonValue(this.id)">Easy</button>
+                  <button class="btn start btn-index" id="Medium" value="2" onclick="buttonValue(this.id)">Medium</button>
+                  <button class="btn start btn-index" id="Hard" value="3" onclick="buttonValue(this.id)">Hard</button>
+                  <button class="btn start btn-index" id="Ultimate" value="4" onclick="buttonValue(this.id)">Ultimate Badass!</button> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Pass GET parameters to the game page 
+      function buttonValue(btnID) {
+        const params = new URLSearchParams();
+        const btnValue = document.getElementById(btnID).value;
+        
+        params.append('lvl', btnValue);
+        window.location.href = `game.html?${params.toString()}`;
+      }
+    </script>
+  </body>
+</html>

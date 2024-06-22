@@ -1,0 +1,124 @@
+/* Heading Styles */
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+h6 {
+  margin: 0 !important;
+  padding: 0.5rem 0 !important;
+}
+
+/* Wrapper */
+.wrapper {
+  max-width: 95%;
+  max-height: 100%;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 3px 3px;
+  color: #FFFFFF; /* White text */
+  background-color: #1C3A56; /* Dark blue background */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navbar */
+.navbar {
+  padding-top: 0px;
+}
+
+/* Container for Score and Level */
+.container-data {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+/* Game Content Area */
+#GameContent {
+  position: relative;
+  margin: 0 auto;
+  height: 800px;
+  width: 100%;
+  border-bottom: 2px solid #FFA726; /* Orange border */
+  background-color: rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+/* Input Field */
+#gameInput {
+  font-size: 50px;
+}
+
+/* Word Style */
+.word {
+  position: absolute;
+  color: #FFA726; /* Orange text */
+  padding: 0 10;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.word p {
+  position: relative;
+  margin: 0;
+}
+
+/* Game Over Modal */
+.modal-gameover {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 25%; 
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+/* Button Styles */
+.btn-modal {
+  user-select: none;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 4px 0;
+  border-radius: 8px;
+  color: #1C3A56; /* Dark blue text */
+  border: none;
+  background: #FFA726; /* Orange background */
+  letter-spacing: 1px;
+  font-weight: 700; /* Slightly thicker font weight */
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 150ms ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.btn-modal a {
+  color: #1C3A56; /* Dark blue text */
+  font-weight: 700; /* Slightly thicker font weight */
+  text-decoration: none; /* Remove underline */
+}
+
+.btn-modal:hover,
+.btn-modal a:hover {
+  background-color: #FFA726; /* Orange hover */
+  border-radius: 8px; /* Maintain rounded corners */
+  color: #1C3A56 !important; /* Dark blue text */
+  transform: translateY(-4px);
+  text-decoration: none; /* Remove underline */
+}
+
+/* Audio Control */
+audio {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}

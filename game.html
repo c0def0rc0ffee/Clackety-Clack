@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <title>Clackety Clack</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-transparent px-5">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ml-0" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="btn back btn-sm" href="index.html"><< Back</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="Wrapper" class="wrapper">
+      <div class="container-data">
+        <div id="Score" class="score">Score: 0</div>
+        <div id="Level" class="level">Level:</div>
+      </div>
+      <div id="GameContent" class="row game-content justify-content-center align-items-center"></div>
+      <form id="gameInput" autocomplete="off"> 
+        <span id="typedCharacters"></span>
+        <script>
+          document.addEventListener("keydown", keyDownTextField, true);
+          function keyDownTextField(e) {
+            var keyCode = e.keyCode;
+            if(keyCode==13) {
+              //Enter - do nothing
+            } else if(keyCode==8) {
+              //Backspace - remove a char
+              let str = document.getElementById('typedCharacters').textContent.substring(0, document.getElementById('typedCharacters').textContent.length - 1);
+              document.getElementById('typedCharacters').textContent = str;
+            } else if(keyCode==46) {
+              //Delete - remove a char
+            } else {
+              let key = e.key;
+              if (key.length === 1) {
+                document.getElementById('typedCharacters').textContent = document.getElementById('typedCharacters').textContent + key;
+                if (getWord(key)) {
+                  document.getElementById('typedCharacters').textContent = '';
+                }
+              }
+            }
+          }
+        </script>
+      </form>
+    </div>
+    <script src="wordDictionaries.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
