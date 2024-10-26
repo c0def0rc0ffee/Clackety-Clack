@@ -1,6 +1,6 @@
 # ⌨️ Clackety Clack
 
-**Clackety Clack** is a typing test game where you can annoy your colleagues and test your typing speed and keyboard switches! Choose from various difficulty levels and watch as words fall for you to catch… if you can keep up!
+**Clackety Clack** is a typing test game where you test your typing speed and keyboard switches! Choose from various difficulty levels and watch as words fall for you to catch… if you can keep up!
 
 ---
 
