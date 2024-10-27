@@ -1,17 +1,15 @@
 # ⌨️ Clackety Clack
 
-**Clackety Clack** is a typing test game where you test your typing speed and keyboard switches! Choose from various difficulty levels and watch as words fall for you to catch… if you can keep up!
+**Clackety Clack** — The game that makes you question if your fingers are truly nimble or if you're just hitting keys hoping for the best. Test your typing speed, your keyboard switches, and your patience.
 
 ---
 
 ## ✨ Features
 
-- **Dynamic Levels**: Select from Easy, Medium, Hard, and Ultimate Badass levels, each with increasingly challenging words.
-- **Real-Time Scoring**: Earn points for each correctly typed word, with an updated score display.
-- **Debug Mode**: For developers or practice, turn on debug mode to prevent game-over conditions.
-- **Smart Word Placement**: Words appear randomly, avoiding overlap and scaling fall speed with difficulty.
-- **Game Over Modal**: Get a final score when you reach game over, with options to restart or return to the menu.
-
+- **Dynamic Levels**: Select from “Easy” to “Ultimate Badass”.
+- **Real-Time Scoring**: Feel accomplished! Or mildly defeated. Either way, every correct word boosts your score—just don’t get too attached.
+- **Debug Mode**: For those who appreciate a “training wheels” option. Turn on debug mode to ignore game-over, because rules?
+- **Smart Word Placement**: Because we’re kind like that, words appear randomly without overlap.
 ---
 
 ## 🛠 Installation
