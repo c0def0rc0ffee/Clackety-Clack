@@ -12,17 +12,6 @@
 - **Smart Word Placement**: Because we’re kind like that, words appear randomly without overlap.
 ---
 
-## 🛠 Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/clackety-clack.git
-   cd clackety-clack
-2. **Open the Game**:
-   - Open `index.html` in your preferred browser to start playing.
-
----
-
 ## 🚀 How to Play
 
 1. **Choose Your Difficulty Level**:
